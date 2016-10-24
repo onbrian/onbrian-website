@@ -1,0 +1,35 @@
+<!-- views/pages/about.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container" ng-app="ProjectsApp">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <div class="content" ng-controller="ProjectsController">
+        <div class="row">
+            <div class="col-md-10">
+            
+                <div class="jumbotron">
+                    <h1>This is great{{test}}</h1>
+                    <p>Welcome to templating using EJS</p>
+                </div>
+                
+            </div>
+            <div class="col-md-2">
+                    <projects-thumbnail ng-repeat="num in numbers" info="num"></projects-thumbnail>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+</body>
+</html>
