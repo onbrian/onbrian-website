@@ -10,42 +10,25 @@
     <header>
         <% include ../partials/header %>
     </header>
-
-    <div id="about" class="pane pane-white">
-        <div class="pane-content">
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
+    <main ng-controller="ProjectsController">
+        <div id="about" class="pane pane-white">
+            <% include ../partials/aboutPane %>
         </div>
-    </div>
-    <div id="projects" class="pane pane-dark">
-        <div class="pane-content">
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
+        <div id="projects" class="pane pane-dark">
+            <% include ../partials/projectsPane %>
         </div>
-    </div>
 
-    <div class="pane pane-white">
-        <div class="pane-content">
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
-            <h1>hi</h1>
+        <div class="pane pane-white">
+            <div>
+                <h1>hi</h1>
+                <h1>hi</h1>
+                <h1>hi</h1>
+                <h1>hi</h1>
+                <h1>hi</h1>
+                <h1>hi</h1>
+            </div>
         </div>
-    </div>
-
+    </main>
     <footer>
         <% include ../partials/footer %>
     </footer>

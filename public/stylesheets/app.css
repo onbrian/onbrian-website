@@ -1,57 +1,21 @@
-header {
-	background-color: #2b2b2b;
+
+:root {
+	--custom-grey: #2b2b2b;
+	--blue-hover-color: #428bca;
 }
 
 body {
 	/* padding to handle fixed navbar */
     padding-top: 50px;
     width: 100%;
-    /*background-color: #2b2b2b;*/
 }
-
-/* header CSS */
-
-/*
-.clearfix {
-	content: " ";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
-
-.custom-page-header {
-	overflow: auto;
-	position: fixed;
-	width: 100%; 
-	top: 0;
-}
-
-.header-btn-toolbar {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}*/
 
 /* pane within a body */
+
 .pane {
-
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
-
-.pane-content {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-    text-align: center;
-}
-/*
-.pane-content {
-	margin: auto;
-	width: 50%;
-    display: inline-block;
-    width: 35px;
-    line-height: 35px;
-    text-align: center;
-}*/
 
 .pane-white {
 	background-color: white;
@@ -59,15 +23,97 @@ body {
 }
 
 .pane-dark {
-	background-color: #2b2b2b;
+	background-color: var(--custom-grey);
 	color: white;
 }
 
+/* about pane */
+
+.about-content {
+	width: 40%;
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	/* define font color for child element use */
+	--about-font-color: #656565;
+}
+
+.about-content-title {
+	color: var(--about-font-color);
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.about-content-body {
+	border: 1px solid gray;
+	padding: 25px;
+}
+
+.about-content-font {
+	color: var(--about-font-color);
+}
+
+.about-content-list {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 15px;
+}
+
+.about-content-list li:before {
+	content: "+";
+	color: var(--about-font-color);
+	padding-right: 3px
+}
+
+.about-content-list a:link, a:visited {
+	color: var(--about-font-color);
+}
+
+.about-content-list a:hover {
+	/*color: var(--blue-hover-color);*/
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* projects pane */
+
+.projects-content {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projects-content-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.projects-grid {
+	/* negative margins to account for 10px padding per thumbnail */
+	margin-left: -10px;
+	margin-right: -10px;
+	min-width: 300px;
+}
+
+.projects-content-col {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 /* CSS for hover project thumbnails */
-/* borrowed from following link: http://bootsnipp.com/snippets/featured/thumbnail-caption-hover-effect*/
+/* borrowed from following link: http://bootsnipp.com/snippets/featured/thumbnail-caption-hover-effect */
+
+.projects-thumbnail {
+	padding: 10px;
+	min-width: 100px;
+	max-width: 200px;
+}
+
 .hover-thumbnail {
     position:relative;
     overflow:hidden;
+    margin: 0px;
 }
 
 .hover-thumbnail-caption {

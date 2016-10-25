@@ -1,13 +1,9 @@
-<!--<p>{{info.number}}</p>-->
-
-<div class="row projects-thumbnail">
-	<div class="col-md-12">
-		<a href="#" class="thumbnail hover-thumbnail" ng-mouseover="showCaption()" ng-mouseleave="hideCaption()">
-			<div class="caption hover-thumbnail-caption">
-                <h4>Thumbnail Headline</h4>
-                <p>short thumbnail description</p>
-            </div>
-			<img src="/img/default-placeholder.png" alt="{{info.number}}">
-		</a>
-	</div>
+<div class="projects-thumbnail">
+	<a href="#" class="thumbnail hover-thumbnail" ng-mouseover="showCaption()" ng-mouseleave="hideCaption()">
+		<div class="caption hover-thumbnail-caption">
+            <h4>{{info.title}}</h4>
+            <p>{{info.description}}</p>
+        </div>
+		<img src="{{info.img_src}}" alt="{{info.title}}">
+	</a>
 </div>

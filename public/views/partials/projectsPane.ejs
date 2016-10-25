@@ -1,0 +1,12 @@
+<div class="projects-content">
+    <h3 class="projects-content-title">projects</h3>
+    <div class="container-fluid projects-grid">
+        <div class="row">
+            <!-- 3 per row on large devices -->
+            <!-- 2 per row on small devices -->
+            <div class="col-xs-6 col-md-4 projects-content-col" ng-repeat="proj in allProjects">
+                <projects-thumbnail info="proj"></projects-thumbnail>
+            </div>
+        </div>
+    </div>
+</div>
